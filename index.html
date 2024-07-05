@@ -16,13 +16,13 @@
         <nav>
           <img src="images/logo.png" class="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
 
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
 
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -131,7 +131,7 @@
       </div>
     </div>
     <!-- ------portfolio -->
-    <div class="portfolio">
+    <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
@@ -173,17 +173,57 @@
       </div>
     </div>
     <!-- ----------------contact -->
-    <div class="contact">
+    <div id="contact">
       <div class="container">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p>111prakashshrestha11141@gmail.com</p>
-            <p>9840171080</p>
-            <div class="social-icons"></div>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              111prakashshrestha11141@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>9840171080</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/prakashstha11141/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/prakash-shrestha-817a60192/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/prakash11141"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/Prakash_Shrestha_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
           </div>
-          <div class="contact-right"></div>
+
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright by Prakash Shrestha
+          <i class="fa-solid fa-face-smile"></i>
+        </p>
       </div>
     </div>
     <script>
