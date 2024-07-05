@@ -15,7 +15,7 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" />
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -23,7 +23,9 @@
             <li><a href="#portfolio">Portfolio</a></li>
 
             <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Computer Engineer</p>
@@ -69,7 +71,7 @@
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>React</span><br />Designing Web/App interface</li>
+                <li><span>None</span><br />Designing Web/App interface</li>
                 <li><span>MongoDB</span><br />Designing Database</li>
                 <li>
                   <span>Javascript and Node</span><br />Backend development
@@ -238,6 +240,15 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
       }
     </script>
   </body>
